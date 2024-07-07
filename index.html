@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="shortcut icon" href="spin.jpeg" type="image/x-icon" />
+    <title>str-Andrade</title>
+</head>
+
+<body>
+    <div class="container-back">
+        <div class="container-front index-front">
+            <header>
+                <img src="spin.jpeg" class="imagem-perfil">
+                <div>
+                    <h2>Taxistas Andrade</h2>
+                    <h5><a href="mailto:gbpedroso.22@gmail.com" class="mail-hover">O melhor para você</a></h5>
+                </div>
+            </header>
+            <div class="content-list">
+                <ul class="content">
+                    <li class="sobre-mim" onclick="showSobreMim()">
+                        <ion-icon class="content-icon" name="person-outline"></ion-icon>
+                        <p>Sobre nós</p>
+                        <ion-icon class="go-icon" name="chevron-forward-outline"></ion-icon>
+                    </li>
+                    <li class="Contatos" onclick="showCertificados()">
+                        <ion-icon class="content-icon" name="ribbon-outline"></ion-icon>
+                        <p>Contatos</p>
+                        <ion-icon class="go-icon" name="chevron-forward-outline"></ion-icon>
+                    </li>
+                </ul>
+            </div>
+            <nav id="redes-sociais">
+                <a href="https://wa.me/+5592992144163" target="_blank">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+                <a href="https://www.instagram.com/matheusinho_pro/?igsh=cW5uN3B0dHh6d3Fh" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=5592991089962&text&type=phone_number&app_absent=03" target="_blank">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+            </nav>
+        </div>
+        <div>
+            <div id="card-sobre-mim" class="card-section" style="display: none;">
+                <ion-icon name="arrow-back-circle-outline" class="back-icon" onclick="exitCards()"></ion-icon>
+                <h1 class="card-titulos">Sobre nós</h1>
+                <p class="descricao">
+                    </br>
+                    Olá, somos os Taxistas Andrade! Estamos aqui para oferecer o melhor serviço de transporte na cidade. Com muitas experiência e um compromisso inabalável com a segurança e o conforto dos nossos passageiros, estamos prontos para atender às suas necessidades de transporte. Desde corridas rápidas até viagens mais longas, fretes etc... Estamos à disposição para proporcionar uma jornada tranquila e eficiente. Conte conosco para uma viagem segura e confortável, sempre com um sorriso no rosto e prontos para superar suas expectativas.
+                </p>
+            </div>
+            <div id="card-certificados" class="card-section" style="display: none;">
+                <ion-icon name="arrow-back-circle-outline" class="back-icon" onclick="exitCards()"></ion-icon>
+                <h1 class="card-titulos">Contatos</h1>
+                <ul class="scroll-certificados">
+                    <li>
+                        <div class="certificados-fundo">
+                            <div class="flex-itens">
+                                <img src="Captura de tela 2024-07-04 102622.png.png" class="img-certificados">
+                                <div class="flex-icons-column">
+                                    <img src="images.png" class="icon-certificados">
+                                </div>
+                            </div>
+                            <a href="https://api.whatsapp.com/send/?phone=5592992144163&text&type=phone_number&app_absent=0" target="_blank" type="button"
+                               terget="_blank" class="btn-certificados">Ver whatsapp</a>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="certificados-fundo">
+                            <div class="flex-itens">
+                                <img src="Captura de tela 2024-07-04 114047.png" class="img-certificados">
+                                <div class="flex-icons-column">
+                                    <img src="images.png" class="icon-certificados">
+                                </div>
+                            </div>
+                            <a href="https://api.whatsapp.com/send/?phone=5592991089962&text&type=phone_number&app_absent=0"
+                                target="_blank" class="btn-certificados">Ver whatsapp</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="certificados-fundo">
+                            <div class="flex-itens">
+                                <img src="mateus.jpg" class="img-certificados">
+                                <div class="flex-icons-column">
+                                    <img src="transferir.jpeg" class="icon-certificados">
+                                </div>
+                            </div>
+                            <a href="https://www.instagram.com/matheusinho_pro/?igsh=cW5uN3B0dHh6d3Fh"
+                                target="_blank" class="btn-certificados">Ver Instagram</a>
+                 
+                                </div>
+
+                    </li>
+                </ul>
+            </div>
+            <div id="card-projetos" class="card-section" style="display: none;">
+                <ion-icon name="arrow-back-circle-outline" class="back-icon" onclick="exitCards()"></ion-icon>
+                <h1 class="card-titulos">Portfólio</h1>
+            </div>
+        </div>
+    </div>
+    <script src="./src/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
